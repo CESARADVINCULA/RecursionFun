@@ -1,7 +1,7 @@
-<B><U>SCALA UTILITIES FUNCTIONS</U></B>
+<B><U>RECURSION FUN</U></B>
 
 Welcome to this repository! </BR>
-The main aim to this repository is to have some utilities functions and are broken down into:
+The main aim to this repository is to have some utilities scala functions and are broken down into:
 
 High Order Functions </BR>
 Currying </BR>
