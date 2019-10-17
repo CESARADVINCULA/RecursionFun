@@ -1,4 +1,4 @@
-package com.recursion.arrays
+package com.hackerrank.arrays
 
 object LeftRotation {
   /**
