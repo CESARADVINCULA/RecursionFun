@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29455296-c67b-44bb-a9bb-6b59f50f5c84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_10_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecursionFun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RecursionFun.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/recursion/arrays/DynamicArrays.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/DynamicArrays.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/recursion/arrays/LeftRotation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/LeftRotation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/recursion/arrays/Sum2Dimensional.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/Sum2Dimensional.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hackerrank/arrays/LeftRotation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/LeftRotation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimumSwapFinal.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimumSwap/MinimumSwapFinal.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimunSwap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimumSwap/MinimunSwap.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hackerrank/arrays/MiniumSwapOptimized.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimumSwap/MiniumSwapOptimized.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +104,7 @@
       <module name="RecursionFun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hackerrank.arrays.*" />
+          <option name="PATTERN" value="com.hackerrank.arrays.MinimumSwap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,7 +117,7 @@
       <module name="RecursionFun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hackerrank.arrays.*" />
+          <option name="PATTERN" value="com.hackerrank.arrays.MinimumSwap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

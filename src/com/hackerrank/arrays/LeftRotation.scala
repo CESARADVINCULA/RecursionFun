@@ -23,8 +23,7 @@ object LeftRotation {
     }
 
     if (d == 0) { a }
-    else {orderedArrayIns( a , d, d,
-      arrRslt, 0)}
+    else {orderedArrayIns( a , d, d, arrRslt, 0)}
 
   }
 

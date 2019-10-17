@@ -1,47 +1,6 @@
-package com.hackerrank.arrays
+package com.hackerrank.arrays.MinimumSwap
 
-import scala.collection.mutable.ArrayBuffer
-
-object MinimunSwap {
-
-
-  /**
-   * @Author Cesar Advincula
-   * @param arr
-   * @return get the minimum of a element Array
-   */
-  def minimumArrayBuff(arr: ArrayBuffer[Int]): Int = {
-    def minimumArrayIns(arrIns: ArrayBuffer[Int], result: Int): Int = {
-      if (!arrIns.isEmpty) {
-        if (arrIns.head > result) {
-          minimumArrayIns(arrIns.tail, result)
-        }
-        else {
-          minimumArrayIns(arrIns.tail, arrIns.head)
-        }
-      }
-      else {
-        result
-      }
-    }
-    minimumArrayIns(arr, arr(0))
-  }
-
-  /**
-   * @Author Cesar Advincula
-   * @param arr
-   * @return get a ordered Array from minor to Major
-   */
-  def sortedMinorToMajorRef(arr: Array[Int]): Array[Int] = {
-    val arrEmp = ArrayBuffer[Int]()
-    def sortedMinorToMajorIns(arrIns: Array[Int], arrResult: ArrayBuffer[Int], arrWithout: ArrayBuffer[Int]): ArrayBuffer[Int] = {
-      if (!arrIns.isEmpty) {
-        sortedMinorToMajorIns(arrIns.tail, arrResult += minimumArrayBuff(arrWithout), arrWithout -= minimumArrayBuff(arrWithout))
-      }
-      else arrResult
-    }
-    sortedMinorToMajorIns(arr, arrEmp, arr.to[ArrayBuffer]).toArray
-  }
+object MiniumSwapOptimized {
 
   /**
    * @Author Cesar Advincula
@@ -81,7 +40,7 @@ object MinimunSwap {
         result
       }
     }
-    getDisorderArrayIns(arr, sortedMinorToMajorRef(arr), 0, arr.length - 1, arrEmpt2)
+    getDisorderArrayIns(arr, arr.sortWith(_ < _), 0, arr.length - 1, arrEmpt2)
   }
 
 
@@ -104,7 +63,7 @@ object MinimunSwap {
         result
       }
     }
-    if(checkOrderArrayIns( arr, sortedMinorToMajorRef(arr), 0, arr.length-1,0) > 0 ) false
+    if(checkOrderArrayIns( arr, arr.sortWith(_ < _), 0, arr.length-1,0) > 0 ) false
     else true
   }
 
@@ -130,10 +89,10 @@ object MinimunSwap {
             changePositionIns(arr, arr2, positionIn, positionFi)
           }
           changePosition(arrOriginal
-            , getPositionByNumber(arrOrdered, minimumArrayBuff(arrDisorder.to[ArrayBuffer]))
-            , getPositionByNumber(arrOriginal, minimumArrayBuff(arrDisorder.to[ArrayBuffer])))
+            , getPositionByNumber(arrOrdered, arrDisorder.reduceLeft(_ min _))
+            , getPositionByNumber(arrOriginal, arrDisorder.reduceLeft(_ min _) ) )
         }
-        changingPosArray(arrOriginal, sortedMinorToMajorRef(arrOriginal), getDisorderArray(arrOriginal))
+        changingPosArray(arrOriginal, arrOriginal.sortWith(_ < _), getDisorderArray(arrOriginal))
       }
 
       if (checkOrderArray(arrOriginalM) == false) {
@@ -144,10 +103,11 @@ object MinimunSwap {
     countMinChange(arr,0 )
   }
 
+
+
   def main(args: Array[String]): Unit = {
     val arr=Array(8,	45,	35,	84,	79,	12,	74,	92,	81,	82,	61,	32,	36,	1,	65,	44,	89,	40,	28,	20,	97,	90,	22,	87,	48,	26,	56,	18,	49,	71,	23,	34,	59,	54,	14,	16,	19,	76,	83,	95,	31,	30,	69,	7,	9,	60,	66,	25,	52,	5,	37,	27,	63,	80,	24,	42,	3,	50,	6,	11,	64,	10,	96,	47,	38,	57,	2,	88,	100,	4,	78,	85,	21,	29,	75,	94,	43,	77,	33,	86,	98,	68,	73,	72,	13,	91,	70,	41,	17,	15,	67,	93,	62,	39,	53,	51,	55,	58,	99,	46)
     println(" countMinChange " + minimumSwaps(arr) )
-
   }
 
 

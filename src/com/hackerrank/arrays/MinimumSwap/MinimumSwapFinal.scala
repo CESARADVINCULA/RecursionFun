@@ -1,4 +1,4 @@
-package com.hackerrank.arrays
+package com.hackerrank.arrays.MinimumSwap
 
 object MinimumSwapFinal {
 
