@@ -1,6 +1,6 @@
 package com.hackerrank.arrays
 
-object DynamicArrays {
+object AvgMultidimensionalArrays {
 
   /**
    * @Author: Cesar Advincula
