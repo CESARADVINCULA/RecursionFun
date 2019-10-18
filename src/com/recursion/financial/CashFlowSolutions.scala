@@ -51,7 +51,6 @@ object CashFlowSolutions {
 
     }
     else { fixedPointInterestRate }
-
   }
     calculationIRR( cashFlowArr, 1, 1,1000,0.1,0)
   }

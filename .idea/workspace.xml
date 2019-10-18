@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="29455296-c67b-44bb-a9bb-6b59f50f5c84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hackerrank/arrays/LeftRotation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/LeftRotation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimumSwapFinal.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimumSwap/MinimumSwapFinal.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimunSwap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimumSwap/MinimunSwap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hackerrank/arrays/MiniumSwapOptimized.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hackerrank/arrays/MinimumSwap/MiniumSwapOptimized.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/recursion/challenges/Utilities.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/recursion/challenges/Utilities.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/recursion/financial/CashFlowSolutions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/recursion/financial/CashFlowSolutions.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Iteractions">
+  <component name="RunManager" selected="Application.Utilities">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="RecursionFun" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -ea" />
@@ -99,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeftRotation" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.hackerrank.arrays.LeftRotation" />
+    <configuration name="Sum2Dimensional" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.hackerrank.arrays.Sum2Dimensional" />
       <module name="RecursionFun" />
       <extension name="coverage">
         <pattern>
@@ -112,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sum2Dimensional" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.hackerrank.arrays.Sum2Dimensional" />
+    <configuration name="Utilities" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.recursion.challenges.Utilities" />
       <module name="RecursionFun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hackerrank.arrays.MinimumSwap.*" />
+          <option name="PATTERN" value="com.recursion.challenges.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Utilities" />
         <item itemvalue="Application.Iteractions" />
         <item itemvalue="Application.HighOrderFunctions" />
         <item itemvalue="Application.CashFlowSolutions" />
         <item itemvalue="Application.Sum2Dimensional" />
-        <item itemvalue="Application.LeftRotation" />
       </list>
     </recent_temporary>
   </component>
