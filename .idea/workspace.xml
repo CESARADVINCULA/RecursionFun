@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="29455296-c67b-44bb-a9bb-6b59f50f5c84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/recursion/challenges/Utilities.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/recursion/challenges/Utilities.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/recursion/financial/CashFlowSolutions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/recursion/financial/CashFlowSolutions.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +158,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
