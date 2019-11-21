@@ -1,11 +1,14 @@
-<B><U>RECURSION FUN</U></B>
+# Scala Recursion Fun
 
-Welcome to this repository! </BR>
+# Overview
+
+Welcome to this repository! 
 The main aim to this repository is to have some utilities scala functions and are broken down into:
 
-1. High Order Functions </BR>
-2. Currying </BR>
-3. Financial Functions </BR>
-4. Arrays Manipulation ( Multidimensional)</BR></BR>
+High Order Functions 
+Currying 
+Financial Functions 
+Arrays Manipulation ( Multidimensional)
 
+-------------------------------
 Author: Cesar Advincula
