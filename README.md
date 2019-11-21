@@ -2,13 +2,12 @@
 
 # Overview
 
-Welcome to this repository! 
-The main aim to this repository is to have some utilities scala functions and are broken down into:
+The main aim to this IntelliJ repository is to have some utilities scala functions and are broken down into:
 
-High Order Functions </br>
-Currying </br>
-Financial Functions  </br>
-Arrays Manipulation ( Multidimensional) </br>
+1.High Order Functions </br>
+2.Currying </br>
+3.Financial Functions  </br>
+4.Arrays Manipulation ( Multidimensional) </br>
 
 -------------------------------
 Author: Cesar Advincula
