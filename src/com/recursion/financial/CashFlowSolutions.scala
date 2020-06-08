@@ -2,66 +2,76 @@ package com.recursion.financial
 
 object CashFlowSolutions {
 
-  /**
-   * @Author Cesar Advincula
-   * @param cashFlow Array with its the Cash Flow
-   * @param interestRate
-   * @return Calculation of Net Present Value
-   */
-  def compNPV( cashFlow: Array[Int], interestRate : Double ) : Double ={
-    def compNPVIns( cashFlowArr: Array[Int], interestRateArr : Double, iterator : Int ) : Double ={
-      if(iterator <= cashFlowArr.length+1) {
-        cashFlowArr.head / ( Math.pow( (1+interestRateArr) , iterator )) + compNPVIns( cashFlowArr.tail, interestRateArr , iterator + 1) }
-      else {  0  }
-    }
-    compNPVIns( cashFlow,interestRate,0 )
-  }
 
   /**
-   * @Author Cesar Advincula
-   * @param cashFlowArr
-   * @return calculation of the IRR
+   * Computation of the Net Present Value
+   *  Author: Cesar Advincula
+   * @param cashFlow
+   * @param interestRate
+   * @return
    */
-  def compIRR(  cashFlowArr : Array[Int] ) : Double = {
-   def calculationIRR( cashFlow : Array[Int], fixedPointInterestRate : Double , iniIterator : Int, FinIterator: Int, step : Double, flag : Int ) : Double = {
-    if (iniIterator <= FinIterator) {
-      if (compNPV(cashFlow, fixedPointInterestRate) == 0) {
-        calculationIRR(cashFlow, fixedPointInterestRate, iniIterator + 1, FinIterator, step, flag)
+  def compNVP( cashFlow : Array[Double], interestRate : Double) : Double ={
+    def compNVPIns( cashFlow : Array[Double], interestRate : Double, iterator: Int) : Double ={
+      if( ! cashFlow.isEmpty ) {
+        cashFlow.head / ( Math.pow((1+interestRate), iterator)  ) + compNVPIns(cashFlow.tail, interestRate, iterator +1)
       }
       else {
-        if (compNPV(cashFlow, fixedPointInterestRate) < 0 && flag == 1) {
-          calculationIRR(cashFlow, fixedPointInterestRate - step / 2, iniIterator + 1, FinIterator, step - step / 2, 0)
+        0
+      }
+    }
+    compNVPIns(cashFlow, interestRate ,0)
+  }
+
+  /**
+   *  Search Binary for Interest Rate
+   *  Author: Cesar Advincula
+   * @param cashFlow
+   * @return
+   */
+  def compIRR(  cashFlow : Array[Double] ) : Double ={
+    val iterator = 1
+    val limIteration = 1000
+    val resultIRR = 3
+    val step = 0.1
+    val flagBreak = 0
+    def insCompIRR( cashFlow : Array[Double], iterator : Int, limIteration : Int,
+                    resultIRR : Double , step : Double, flagBreak : Int ) : Double ={
+
+      if( iterator < limIteration) {
+        if( compNVP (cashFlow, resultIRR) ==0  ) {
+          insCompIRR( cashFlow, limIteration,limIteration, resultIRR, step, flagBreak )
         }
-
         else {
-          if (compNPV(cashFlow, fixedPointInterestRate) > 0 && flag == 0) {
-            calculationIRR(cashFlow, fixedPointInterestRate + step / 2, iniIterator + 1, FinIterator, step + step / 2, 1)
+          if( compNVP (cashFlow, resultIRR)   < 0 && flagBreak ==0 ){
+            insCompIRR( cashFlow, iterator + 1,limIteration, resultIRR - step, step, flagBreak )
           }
-
           else {
-            if (flag == 0) {
-              calculationIRR(cashFlow, fixedPointInterestRate - step, iniIterator + 1, FinIterator, step, 1)
+            if( compNVP (cashFlow, resultIRR)   > 0 && flagBreak ==0 ) {
+              insCompIRR( cashFlow, iterator + 1,limIteration, resultIRR + step/2,  step/2, 1 )
             }
             else {
-              calculationIRR(cashFlow, fixedPointInterestRate + step, iniIterator + 1, FinIterator, step, 1)
+              if( compNVP (cashFlow, resultIRR) > 0 &&  flagBreak ==1 ){
+                insCompIRR( cashFlow, iterator + 1,limIteration, resultIRR + step,  step, flagBreak )
+              }
+              else {
+                insCompIRR( cashFlow, iterator + 1,limIteration, resultIRR - step/2,  step/2, 0 )
+              }
             }
           }
         }
       }
-
+      else {
+        resultIRR
+      }
     }
-    else { fixedPointInterestRate }
+    insCompIRR( cashFlow, iterator, limIteration, resultIRR, step, flagBreak )
   }
-    calculationIRR( cashFlowArr, 1, 1,1000,0.1,0)
-  }
+
 
 
   def main(args: Array[String]): Unit = {
-    val cashFlow = Array(-10,5,7)
-    val interestRate = 0.1
-
-    println( " compNPV "+compNPV(cashFlow,interestRate))
-    println( " compIRR "+compIRR(cashFlow))
+    val cashFlow = Array(-10 ,5 ,7.0)
+    println("compIRR " + compIRR(cashFlow) * 100+"%")
   }
 
 }
