@@ -1,8 +1,8 @@
 # Scala Recursion Fun
 
-# Overview
+## Overview
 
-The main aim to this IntelliJ repository is to have some utilities scala functions and are broken down into:
+The main aim to this repository is to have some scala utilities, it is broken down into:
 
 1. High Order Functions </br>
 2. Currying </br>
@@ -10,5 +10,6 @@ The main aim to this IntelliJ repository is to have some utilities scala functio
 4. Framework Collections Manipulation </br>
 5. Sorts of Polymorphism ( SubType, Generic / Parametric, Ad-Hoc ) </br>
 6. Array Optimization Methods 
+
 -------------------------------
 Author: Cesar Advincula
