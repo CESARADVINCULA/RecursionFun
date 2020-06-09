@@ -16,7 +16,7 @@ object polymorphismParametric {
 
   /**
    * This example Parametric Polymorphism, is to create a dataStructure
-   * to Pass It as Parameter
+   * to Pass It as Parameter and this class can be mutated
    */
 
   trait NewDataStructure
@@ -37,7 +37,5 @@ object polymorphismParametric {
     println(newDataStructure.isEmpty)
 
   }
-
-
 
 }
