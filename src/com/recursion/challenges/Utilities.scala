@@ -64,23 +64,6 @@ object Utilities {
     factorialIns(1,num)
   }
 
-  /**
-   * @Author Cesar Advincula
-   * @param num
-   * @return check if the Number is Prime
-   */
-  def checkPrimeNumber( num : Int ) : Boolean ={
-    if(num==2) { true}
-    else {if( num%2 !=0 &&  num %(Math.sqrt(num)) !=0 ) { true}
-          else false}
-  }
-
-
-
-  def main(args: Array[String]): Unit = {
-
- }
-
 
 
 }

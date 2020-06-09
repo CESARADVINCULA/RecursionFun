@@ -61,13 +61,16 @@ object FrameCollectionFun {
   }
 
   def main(args: Array[String]): Unit = {
+        //List
         sampleListUnidimensional()
+        //Array
         sampleListMultiDimensional
         sampleArrayUnidimensional()
+        //Maps
         sampleFrameCollectMap()
         /*There are two options to create a Dimensional Array*/
         sampleDimensionalArray()  //Array.ofDim
-        sampleArrayOfArray()    //Array of Array
+        sampleArrayOfArray()      //Array of Array
 
   }
 

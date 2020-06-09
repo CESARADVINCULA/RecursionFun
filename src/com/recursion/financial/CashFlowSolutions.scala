@@ -22,7 +22,7 @@ object CashFlowSolutions {
   }
 
   /**
-   *  Binary Search for Interest Rate
+   *  Binary Search for Periodic Interest Return Rate
    *  Author: Cesar Advincula
    * @param cashFlow
    * @return

@@ -9,7 +9,8 @@ The main aim to this repository is to have some scala utilities, it is broken do
 3. Financial Functions  (Binary Search)  </br>
 4. Framework Collections Manipulation </br>
 5. Sorts of Polymorphism ( SubType, Generic / Parametric, Ad-Hoc ) </br>
-6. Array Optimization Methods 
+6. Array Optimization Methods </br>
+7. Pass By Value vs Pass By Reference </br>
 
 -------------------------------
 Author: Cesar Advincula
