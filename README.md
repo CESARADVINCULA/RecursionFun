@@ -7,7 +7,7 @@ The main aim to this IntelliJ repository is to have some utilities scala functio
 1.High Order Functions </br>
 2.Currying </br>
 3.Financial Functions  </br>
-4.Arrays Manipulation ( Multidimensional) </br>
+4.Framework Collections </br>
 
 -------------------------------
 Author: Cesar Advincula
