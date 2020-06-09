@@ -1,0 +1,7 @@
+# A sample to read basic Yaml
+    name: CesarAdvincula
+    job: DataArchitect
+    skills:
+      - Cloud
+      - Big Data Platform
+      - Deep Learning and Machine Learning

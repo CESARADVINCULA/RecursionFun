@@ -2,7 +2,6 @@ package com.recursion.financial
 
 object CashFlowSolutions {
 
-
   /**
    * Computation of the Net Present Value
    *  Author: Cesar Advincula
