@@ -22,7 +22,7 @@ object CashFlowSolutions {
   }
 
   /**
-   *  Search Binary for Interest Rate
+   *  Binary Search for Interest Rate
    *  Author: Cesar Advincula
    * @param cashFlow
    * @return
